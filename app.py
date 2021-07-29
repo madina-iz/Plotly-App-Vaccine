@@ -56,3 +56,5 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets, meta_tags=m
 app.config.suppress_callback_exceptions = True # see https://dash.plot.ly/urls
 app.title = 'Flu Vaccine Predictor' # appears in browser title bar
 server = app.server
+
+# the app's url on heroku: http://predictfluvacc.herokuapp.com/
