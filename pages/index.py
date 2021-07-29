@@ -35,7 +35,7 @@ fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size
 
 column2 = dbc.Col(
     [
-        html.Img(src='assets/feature_imp_bmh2.jpg', className='img-fluid')
+        html.Img(src='assets/feature_imp.png', className='img-fluid')
         #dcc.Graph(figure=fig),
     ]
 )
