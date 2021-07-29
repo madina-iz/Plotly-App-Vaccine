@@ -187,9 +187,9 @@ def predict(opinion_seas_vacc_effective, opinion_seas_risk, doctor_recc_seasonal
     y_pred = app_pipe.predict(df)[0]
     #print(y_pred)
     if y_pred == 0:
-        return "NO - THE PERSON DID NOT GET VACCINATED"
+        return "NO - Person Did NOT Get Vaccinated"
     else:
-        return "YES - THE PERSON GOT VACCINATED"
+        return "YES - Person Got Vaccinated"
     #return f'{y_pred:.2f}'
 
 
