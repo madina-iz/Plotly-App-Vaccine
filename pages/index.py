@@ -16,17 +16,15 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
         
-            ## Your Value Proposition
+            #### Vaccination is a key public health measure used to fight infectious diseases. It provides immunization for individuals, and enough immunization in a community can further reduce the spread of diseases through “herd immunity.”
 
-            Emphasize how the app will benefit users. Don't emphasize the underlying technology.
-
-            ✅ RUN is a running app that adapts to your fitness levels and designs personalized workouts to help you improve your running.
-
-            ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
+            #### The National Center for Immunization and Respiratory Diseases, the National Center for Health Statistics, Centers for Disease Control and Prevention jointly conducted the National 2009 H1N1 Flu Survey.
+            
+            #### Based on that survey, we have built a machine learning algorithm to predict whether people got a seasonal flu vaccine using information they shared about their backgrounds, opinions, and health behaviors.            
 
             """
         ),
-        dcc.Link(dbc.Button('Your Call To Action', color='primary'), href='/predictions')
+        dcc.Link(dbc.Button('Click Here to Get Predictions', color='primary'), href='/predictions')
     ],
     md=4,
 )
@@ -37,7 +35,8 @@ fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size
 
 column2 = dbc.Col(
     [
-        dcc.Graph(figure=fig),
+        html.Img(src='assets/feature_imp_bmh2.jpg', className='img-fluid')
+        #dcc.Graph(figure=fig),
     ]
 )
 

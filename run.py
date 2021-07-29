@@ -11,12 +11,11 @@ from pages import index, predictions, insights, process
 
 # Navbar docs: https://dash-bootstrap-components.opensource.faculty.ai/l/components/navbar
 navbar = dbc.NavbarSimple(
-    brand='YOUR APP NAME',
+    brand='Seasonal Flu Vaccine Predictor',
     brand_href='/', 
     children=[
-        dbc.NavItem(dcc.Link('Predictions', href='/predictions', className='nav-link')), 
-        dbc.NavItem(dcc.Link('Insights', href='/insights', className='nav-link')), 
-        dbc.NavItem(dcc.Link('Process', href='/process', className='nav-link')), 
+        dbc.NavItem(dcc.Link('Home', href='/', className='nav-link')),
+        dbc.NavItem(dcc.Link('Predictions', href='/predictions', className='nav-link'))         
     ],
     sticky='top',
     color='light', 
@@ -35,11 +34,11 @@ footer = dbc.Container(
         dbc.Col(
             html.P(
                 [
-                    html.Span('Your Name', className='mr-2'), 
-                    html.A(html.I(className='fas fa-envelope-square mr-1'), href='mailto:<you>@<provider>.com'), 
-                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/<you>/<repo>'), 
-                    html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/in/<you>/'), 
-                    html.A(html.I(className='fab fa-twitter-square mr-1'), href='https://twitter.com/<you>'), 
+                    html.Span('Madina Izimbetova', className='mr-2'), 
+                    html.A(html.I(className='fas fa-envelope-square mr-1'), href='mailto:madina.iz@outlook.com'), 
+                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/madina-iz/Plotly-App-Vaccine'), 
+                    html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/in/madina-izimbetova-52562956/'), 
+                    html.A(html.I(className='fab fa-twitter-square mr-1'), href='https://twitter.com/TheMLGal1'), 
                 ], 
                 className='lead'
             )
